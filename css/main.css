@@ -8,7 +8,7 @@
 }
 
 section {
-  padding: 0px 120px 160px;
+  padding: 0px 24px 121px;
 }
 
 .firstSection {
@@ -300,33 +300,137 @@ h2 {
 
 .uWillGet {
   display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  gap: calc(-2.1 + 28px);
+  align-items: center;
   
 }
 
-/* .photoStudentBox {
-  display: flex;
-  gap: 20px 1px; 
-} */
-
-.photoBox {
-  width: calc(19.1vw + 334.3px);
+.photoStudentBox {
+  flex-basis: 580px;
+  flex-grow: 1; 
 }
 
-.photoStudentBox, .listOfSkills {
-  display: flex;
-  gap: 20px 1px;
-  flex-wrap: wrap;
+.photoBox {
+  width: calc(19.2vw + 334px);
 }
 
 .listOfSkills {
-  width: calc(21.2vw + 248.4px);
+  flex-grow: 1000;
 }
 
-.uWillGet ul li {
-  margin-bottom: 25px;
+.listOfSkills span {
+  display: block;
   font-size: calc(0.3vw + 17px);
+  line-height: 140%;
+  width: calc(21.2vw + 248px);
+  margin-bottom: calc(0.6vw + 18px);
+}
+
+@media (max-width: 375px) {
+  .photoStudentBox {
+    display: flex;
+    justify-content: center;
+  }
+  .listOfSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+#titleThirdSection {
+  font-size: calc(2.7vw + 24px);
+  width: calc(29.2vw + 220px);
+  text-transform: uppercase;
+  margin-bottom: calc(5.5vw + 19px);
+  font-weight: 500;
+  line-height: 118%;
+}
+
+.legendWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(3.4vw + 7px);
+  align-items: center;
+}
+
+.legend {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.imgLegend {
+  width: calc(7.7vw + 300px);
+}
+
+.legendInfo {
+  flex-grow: 1000;
+}
+
+.legendInfo h3 {
+  font-size: calc(1.1vw + 34px);
+  line-height: 121%;
+  margin-bottom: calc(1.1vw + 6px);
+}
+
+.legendInfo span {
+  display: block;
+  font-size: calc(1vw + 14px);
+  line-height: 140%;
+  width: calc(26.3vw + 230px);
+  margin-bottom: calc(5.5vw + 19.3px);
+}
+
+.legendCard {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(2,calc(10.4vw + 107px));
+  gap: calc(1.1vw + 26px) calc(8.8vw - 23px);
+  grid-template-areas:  "smile cup"
+                        "bag keyboard";
+}
+
+.card:nth-child(1) {
+  grid-area: smile;
+}
+.card:nth-child(2) {
+  grid-area: cup;
+}
+.card:nth-child(3) {
+  grid-area: bag;
+}
+.card:nth-child(4) {
+  grid-area: keyboard;
+}
+.card img {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: calc(0.6vw + 14px);
+}
+
+@media (max-width: 1280px) {
+  .legend {
+    display: flex;
+    justify-content: center;
+  }
+  .legendInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .legendCard {
+    grid-template-areas:  "smile keyboard"
+                          "cup bag";
+  }
 }
 
 
