@@ -435,4 +435,38 @@ h2 {
 
 
 
+.finalDiploma {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 19px;
+  align-items: center;
+}
+
+.finalIMG {
+  flex-basis: 430px;
+  flex-grow: 1;
+}
+
+.diplomaImg {
+  width: calc(11.3vw + 286px);
+}
+
+.finalText {
+  flex-grow: 1000;
+}
+
+.finalText h3 {
+  font-size: calc(2.7vw + 24px);
+  line-height: 118%;
+  text-transform: uppercase;
+  width: calc(27.6vw + 224px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.finalText p {
+  font-size: calc(1vw + 14px);
+  line-height: 140%;
+  width: calc(20.6vw + 251px);
+}
 
